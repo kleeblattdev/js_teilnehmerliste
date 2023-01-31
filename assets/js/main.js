@@ -24,5 +24,5 @@ btnAdd.addEventListener ("click", () => {
 //letzten Teilnehmer entfernen
 btnRemove.addEventListener ("click", () => {
     teilnehmer.pop();
-    output.innerHTML = teilnehmer;
+    output.innerHTML = teilnehmer.join('');
 })
