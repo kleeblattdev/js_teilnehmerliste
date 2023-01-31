@@ -13,14 +13,15 @@ const output = document.querySelector("ol");
 
 const teilnehmer = [];
 
+//Teilhnehmer hinzufügen
 btnAdd.addEventListener ("click", () => {
-    let userInput = "<li>" + (teilnehmerTxt.value).toString();
+    let userInput = "<li>"+ (teilnehmerTxt.value);
 
     teilnehmer.push(userInput);
-    console.log(teilnehmer);
-    output.innerHTML = teilnehmer;
+    output.innerHTML = teilnehmer.join('');
 })
 
+//letzten Teilnehmer entfernen
 btnRemove.addEventListener ("click", () => {
     teilnehmer.pop();
     output.innerHTML = teilnehmer;
